@@ -1,0 +1,25 @@
+body {
+	background-color: #D4E0F7;
+}
+h1 {
+	color: #342009;
+}
+
+table {
+	border: 1.5px solid #1258DC;
+	text-align: center;
+}
+
+td:hover {
+	background-color: #FB8604;
+	color: #342009;
+}
+
+tr, th {
+	background-color:#342009;
+	color: #D4E0F7;
+}
+tr, td {
+	background-color: #B86B14;
+	color: #D4E0F7;
+}

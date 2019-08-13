@@ -1,0 +1,13 @@
+
+/* This is a comment.*/
+p {
+	color:FloralWhite;
+	background-color:DarkTurquoise;
+	font-size:120%;
+	text-align:left;
+}
+h1, h2 {
+	text-shadow: 3px 2px 3px gray;
+}
+
+	

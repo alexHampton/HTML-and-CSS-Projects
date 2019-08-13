@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<style>
+	.font_1 {
+		background-color: black;
+		color: yellow;
+		font-size: large;
+	}
+	.font_2 {
+		background-color: darkblue;
+		color: white;
+		font-size: medium;
+	}
+	.My_style {
+		background-color: hsla(249, 10%, 63%, 0.81);
+		text-decoration: overline;
+		color: hsla(249, 100%, 63%, 1);
+		line-height: 1.5;
+		text-align: center;
+		font-size: 24px;
+		font-weight: lighter;
+	}
+	</style>
+	
+	<h2 class="font_1">This h2 element is styled per class attribute font_1</h2>
+	<h3 class="font_2">This h3 element is styled per class attribute font_2</h3>
+	<h4 class="font_1">Even though this is an h4 element, it is styled the 
+	same as the h2 element because we pointed to the class attribute font_1</h4>
+	<div class="My_style">
+	<h3>My own style</h3>
+	<p class="My_style">Even though this section is made up of different elements,<br> they all 
+	carry the same style because they are contained within a div container,<br> 
+	and that container has a single class.</p>
+	
+	
+	</div>
+	</body>
+</html>

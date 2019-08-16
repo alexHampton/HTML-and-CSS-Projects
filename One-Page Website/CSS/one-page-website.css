@@ -1,0 +1,56 @@
+body {
+	margin: 20px;
+}
+
+header, #Contact, form, footer {
+	border:solid;
+	padding: 10px;
+}
+
+
+/* ===============================================
+    FONT FAMILIES AND FONT SIZES
+    ============================================ */
+
+h1, ul a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2, p, footer, input, textarea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+p, footer, input, textarea {
+    font-size: 1.25em;
+}
+
+ul a {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* ===============================================
+    INPUT STYLES
+    ============================================= */
+
+input[type="text"], input[type="email"], textarea {
+    margin: 5px auto;
+    position: relative;
+    width: 50%;
+    border-radius: 5px;    
+    border: 2px inset;
+}
+input[type="submit"] {
+    padding: 1%;
+    width: 25%;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 5px;
+
+}

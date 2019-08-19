@@ -77,9 +77,12 @@ header {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    padding-right: 50px;
-    height: 40%;
+    height: auto;
+    min-height: 40%;
     overflow: hidden;
+}
+.overlay-container {
+    margin: 2% 6%;
 }
 
 
@@ -164,11 +167,12 @@ footer {
 
 
 /* LETTERING */
-h1, h2, p {
+/* make elements bigger... */
+h1, h2, p, q, .neil {
     transition: transform 5s;
 }
-
-h1:hover, h2:hover, p:hover{
+/* ...when hovered over. */
+h1:hover, h2:hover, p:hover, q:hover, .neil:hover {
     transform: scale(1.1);
 }
 
@@ -193,4 +197,9 @@ h1 {
 p, form, #github a, footer {
     font-size: 1.2rem;
     font-family: 'Patua One', cursive;
+}
+
+q, .neil {
+    font-size: 1.1rem;
+    font-weight: 500;
 }

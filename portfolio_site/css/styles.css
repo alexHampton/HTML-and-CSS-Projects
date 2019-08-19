@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+}
+
+/* COLOR THEME */
+nav, .image-column, input[type="submit"] {
+    background-color: #9966ff;
+    background-image: linear-gradient(to bottom right, #9966ff,#330099)
+}
+
+a, nav a:hover {
+    color: #9966ff;
+}
+
+.active {   /*This makes the "home" button appear different from the other nav buttons.*/
+    background-color: white;
+    color: #9966ff;
+}
+
+/* NAVBAR SECTION */
+nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    opacity: 0.9;
+    z-index:1;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    border-right: 1px solid;
+    display: block;
+    float: left;
+    font-size: 1.5rem;
+    padding: 2vh 2vw;
+    margin: 1vh auto;
+}
+
+
+
+nav a:hover {
+    background: white;
+    transition: background .5s;
+}
+
+/* JUMBOTRON SECTION */
+video {
+    width: 100%;
+    height: auto;
+    filter: grayscale(75%);
+    min-width: 100%;
+    bottom: 0; /*try to make the video stretch to edges. this doesn't work.*/
+    right: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.video-overlay {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    padding-right: 50px;
+    height: 40%;
+    overflow: hidden;
+}
+
+
+
+/* COLUMNS SECTION (ABOUT, GITHUB, CONTACT) */
+.row{
+    display: flex;
+    height: auto;
+    min-height: 500px;
+}
+
+.column{
+    flex:50%;
+}
+
+
+.image-column img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 5px 0px;
+    filter: grayscale(75%);
+    transition: transform .3s ease-in-out;
+}
+
+.image-column img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.image-column #github-image {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+}
+
+.info-column {
+    text-align: center;
+}
+
+.inner-info-container {
+    padding: 50px;
+}
+
+
+input[type="text"] {
+    width: 80%;
+    margin: 10px;
+    box-shadow: 1px 1px 4px;
+    line-height: 25px;
+}
+
+input[type="submit"] {
+    margin: 10px;
+    width: 30%;
+    min-width: 75px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container {
+    padding-top: 5px;
+    box-shadow: 2px 2px 8px 0px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* FOOTER SECTION */
+footer {
+    margin-top: 10%;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+    background-color: gray;
+}
+
+
+/* LETTERING */
+h1, h2, p {
+    transition: transform 5s;
+}
+
+h1:hover, h2:hover, p:hover{
+    transform: scale(1.1);
+}
+
+#github a {
+    transition: transform 1s;
+}
+
+#github a:hover {
+    transform:scale(1.5);
+}
+
+h1, h2 {
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+}
+
+h1 {
+    letter-spacing: 5px;
+    word-spacing: 8px;
+}
+
+p, form, #github a, footer {
+    font-size: 1.2rem;
+    font-family: 'Patua One', cursive;
+}

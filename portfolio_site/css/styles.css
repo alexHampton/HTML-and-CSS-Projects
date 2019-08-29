@@ -1,5 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
 }
 
 /* COLOR THEME */
@@ -185,7 +194,7 @@ h1:hover, h2:hover, p:hover, q:hover, .neil:hover {
 }
 
 h1, h2 {
-    font-size: 2rem;
+    font-size: 6vw;
     font-family: 'Staatliches', cursive;
 }
 
@@ -195,11 +204,11 @@ h1 {
 }
 
 p, form, #github a, footer {
-    font-size: 1.2rem;
+    font-size: 2.5vw;
     font-family: 'Patua One', cursive;
 }
 
 q, .neil {
-    font-size: 1.1rem;
+    font-size: 2.5vw;
     font-weight: 500;
 }

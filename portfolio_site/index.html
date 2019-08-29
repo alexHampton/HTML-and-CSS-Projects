@@ -85,15 +85,15 @@
         </div>
         <div class="column info-column">
             <div class="inner-info-container">
-                <form action="">
+                <form action="" name="contactForm" onsubmit="return validateForm()">
                     <h2>Contact</h2>
                     <div class="form-container">
                     Name:<br>
-                    <input type="text" placeholder="Please enter your name"><br>
+                    <input type="text" placeholder="Please enter your name" name="name"><br>
                     Email:<br>
-                    <input type="text" placeholder="Please enter your email"><br>
+                    <input type="text" placeholder="Please enter your email" name="email"><br>
                     Message:<br>
-                    <input type="text" placeholder="Please enter you message"><br>
+                    <input type="text" placeholder="Please enter you message" name="message"><br>
                     <input type="submit" value="Submit">
                     </div>
                 </form>
@@ -110,6 +110,6 @@
     </footer>
 
     
-
+    <script src="js/scripts.js"></script>
 </body>
 </html>
